@@ -1,0 +1,19 @@
+:set prompt "> "
+:seti -XNoImplicitPrelude
+:seti -XOverloadedStrings
+:seti -XScopedTypeVariables
+
+:set -Wall
+:set -fno-warn-type-defaults
+
+:set -DGHCI
+:set +s
+:set +t
+
+:set -package rio
+:set -package pretty-simple
+
+import RIO
+import Text.Pretty.Simple (pPrint)
+
+:set -interactive-print pPrint
